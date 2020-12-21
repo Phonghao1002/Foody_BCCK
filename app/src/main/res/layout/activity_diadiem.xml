@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FF0000"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imagebackdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imagebackdd"
+            android:layout_marginLeft="10dp"
+            android:text="Địa Điểm"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Switch
+            android:drawableLeft="@drawable/iconsmap"
+            android:switchMinWidth="50dp"
+            android:trackTint="#00FF19"
+            android:id="@+id/tb_on_off"
+            android:text="  Cho phép nhận thông báo"
+            android:textSize="20dp"
+            android:background="#DDD7D7"
+            android:layout_below="@+id/textTb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Switch
+            android:drawableLeft="@drawable/iconsmap"
+            android:switchMinWidth="50dp"
+            android:trackTint="#00FF19"
+            android:id="@+id/tb_on_off2"
+            android:text="  Nhận Thông báo ngay"
+            android:textSize="20dp"
+            android:background="#DDD7D7"
+            android:layout_below="@+id/tb_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Switch
+            android:drawableLeft="@drawable/iconsmap"
+            android:switchMinWidth="50dp"
+            android:trackTint="#00FF19"
+            android:id="@+id/tb_on_off3"
+            android:text="  Thông Báo Hàng Ngày"
+            android:textSize="20dp"
+            android:background="#DDD7D7"
+            android:layout_below="@+id/tb_on_off2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

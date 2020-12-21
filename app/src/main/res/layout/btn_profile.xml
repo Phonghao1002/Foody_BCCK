@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/avta_male"/>
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Bình Nguyễn"
+        android:textSize="12sp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/img_user"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem hoạt động"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_centerInParent="true"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

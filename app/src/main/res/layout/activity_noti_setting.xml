@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9E9"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FF0000"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/imageback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageback"
+            android:layout_marginLeft="10dp"
+            android:text="Cài Ðặt Thông Báo"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textTb"
+            android:text="Thông Báo"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <Switch
+            android:drawableLeft="@drawable/iconsnoti"
+            android:switchMinWidth="50dp"
+            android:trackTint="#9B9F9C"
+            android:id="@+id/tb_on_off"
+            android:text="Cho phép nhận thông báo"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:layout_below="@+id/textTb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/textcd"
+            android:text="Cài đặt người dùng"
+            android:textSize="20dp"
+            android:layout_below="@+id/tb_on_off"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:paddingVertical="10dp"
+            android:drawableLeft="@drawable/iconsnoti"
+            android:text="   Cho phép nhận thông báo"
+            android:textSize="20dp"
+            android:layout_below="@+id/textcd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/xahoi"
+            android:drawableRight="@drawable/iconsne"
+            android:paddingVertical="10dp"
+            android:drawableLeft="@drawable/iconsxh"
+            android:text="  Xã Hội"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/textcd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start" />
+        <TextView
+            android:id="@+id/diadiem"
+            android:drawableRight="@drawable/iconsne"
+            android:paddingVertical="10dp"
+            android:drawableLeft="@drawable/iconsplace"
+            android:text=" Địa Điểm đang theo dõi"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/xahoi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start" />
+        <TextView
+            android:id="@+id/textcdtb"
+            android:text="Cài đặt thiết bị"
+            android:textSize="20dp"
+            android:layout_below="@+id/diadiem"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/dialy"
+            android:drawableRight="@drawable/iconsne"
+            android:paddingVertical="10dp"
+            android:drawableLeft="@drawable/iconsmap"
+            android:text="  Theo Địa Lí"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:background="#fff"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/textcdtb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="start" />
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnmacdinh"
+            android:textAllCaps="false"
+            android:background="#FAF6F6"
+            android:text="Cài đặt mặc định"
+            android:layout_below="@+id/dialy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

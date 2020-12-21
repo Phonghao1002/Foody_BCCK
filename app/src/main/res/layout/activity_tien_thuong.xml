@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/red"
+            android:src="@drawable/ic_back"/>
+        <TextView
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiền Thưởng"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ln1"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TÀI KHOẢN FDC CỦA BẠN"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btn_fdc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="0 FDC"
+            android:textSize="30sp"
+            android:textColor="@color/green"
+            android:textStyle=""
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Để lấy Foody Credits -FDC, bạn phải quy dổi điểm thưởng của bạn"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/ln1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_tt_1"
+            android:background="@color/white"
+            android:dividerHeight="1dp" />
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_tt_2"
+            android:background="@color/white"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+</RelativeLayout>

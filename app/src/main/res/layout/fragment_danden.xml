@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/anh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/anh21"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="180dp"/>
+    <TextView
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/txt1"
+        android:text="Chưa có đơn hàng sắp đến"
+        android:layout_below="@+id/anh"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/txt2"
+        android:text="Tìm thực đơn và địa điểm cho đơn hàng. Chúng tôi sẵn sàng phục vụ bạn!"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    />
+</RelativeLayout>
